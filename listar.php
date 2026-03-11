@@ -9,47 +9,6 @@ $arquivo = "alunos.txt";
 <title>Lista de Alunos</title>
 <link rel="stylesheet" href="style.css">
 
-<style>
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f9;
-    text-align:center;
-}
-
-h2{
-    margin-top:30px;
-}
-
-table{
-    margin:30px auto;
-    border-collapse: collapse;
-    width:70%;
-    background:white;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
-}
-
-th{
-    background:#2c3e50;
-    color:white;
-    padding:12px;
-}
-
-td{
-    padding:10px;
-    border-bottom:1px solid #ddd;
-}
-
-tr:nth-child(even){
-    background:#f2f2f2;
-}
-
-tr:hover{
-    background:#e8f4ff;
-}
-
-</style>
-
 </head>
 
 <body>
@@ -106,12 +65,12 @@ if(file_exists($arquivo))
     }
     else
     {
-        echo "Nenhum aluno cadastrado.";
+        echo "<p class='mensagem'>Nenhum aluno cadastrado.</p>";
     }
 }
 else
 {
-    echo "Arquivo não encontrado.";
+    echo "<p class='mensagem'>Arquivo não encontrado.</p>";    
 }
 
 ?>

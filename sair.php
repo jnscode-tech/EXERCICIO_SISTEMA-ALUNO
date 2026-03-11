@@ -24,6 +24,7 @@
 
 
    <p> OBRIGADA POR USAR NOSSO SISTEMA. ATÉ BREVE!!!</p>
+   <img src="image/LogoCaju.png" alt="Logo">
     
 
 </div>

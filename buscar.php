@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         {
             $dados = explode("|", trim($linha));
 
-            // procura pelo nome digitado
+            // procura pelo nome digitado - stripos = faz com que não seja case sensitive
             if(stripos($dados[0], $nome_busca) !== false)
             {
                 $resultados[] = $dados;
@@ -45,7 +45,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     </ul>
 </nav>
 
-
 <div class="titulo"> <h2>Buscar Alunos</h2><br></div>
 
 <div class="container-formulario">
@@ -57,7 +56,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 <br><br>
 
 <button type="submit" class="btn-buscar">Buscar</button>
-
 </form>
 
 </div>
@@ -89,11 +87,11 @@ if(!empty($resultados))
 }
 else if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    echo "Aluno não encontrado.";
+
+    echo "<p class='mensagem'>Aluno não encontrado.</p>";
 }
 
 ?>
-
 
 <footer class="footer-paginas">
 Realizado por: Camila Macedo Mendes | Juliana Nascimento dos Santos

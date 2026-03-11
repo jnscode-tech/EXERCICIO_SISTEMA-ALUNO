@@ -1,9 +1,13 @@
 <!-- PHP - PEGAR OS DADOS DO FORMULÁRIO - COLOCA NO ARRAY -->
-
 <?php
-
 $mensagem = "";
+$mensagem2 = "";
 $arquivo = "alunos.txt";
+
+if(isset($_GET['sucesso']))
+{
+    $mensagem = "Aluno cadastrado com sucesso!";
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -30,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     // Limite de 10 alunos
     if($total >= 10)
     {
-        echo "Limite de 10 alunos atingido!";
+    $mensagem2 = "Limite de 10 alunos atingido para a turma!";
     }
     else
     {
@@ -39,7 +43,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         file_put_contents($arquivo, $linha, FILE_APPEND);
 
-        $mensagem="Aluno cadastrado com sucesso!";
+        header("Location: cadastrar.php?sucesso=1");
+        exit;
     }
 
 }
@@ -94,6 +99,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     <?php if($mensagem != "") { ?>
     <p class="mensagem"><?php echo $mensagem; ?></p>
     <?php } ?>
+
+     <!-- MENSAGENS ABAIXO DO FORM - CADASTRADO COM SUCESSO E LIMITE EXCEDIDO -->
+    <?php if($mensagem != "") { ?>
+        <p class="mensagem"><?php echo $mensagem; ?></p>
+    <?php } ?>
+
+    <?php if($mensagem2 != "") { ?>
+        <p class="mensagem-limite"><?php echo $mensagem2; ?></p>
+    <?php } ?>
+    
     </div> 
 </main>
 

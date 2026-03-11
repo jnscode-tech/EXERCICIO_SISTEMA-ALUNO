@@ -25,7 +25,7 @@
 
 
     <p>Sistema de Cadastro de Alunos</p>
-    <img src="image/logoJuCa.png" alt="Logo">
+    <img src="image/LogoCaju.png" alt="Logo">
     
 
 </div>
