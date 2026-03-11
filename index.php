@@ -25,10 +25,11 @@
 
 
     <p>Sistema de Cadastro de Alunos</p>
+    <img src="image/logoJuCa.png" alt="Logo">
     
 
 </div>
-<footer>
+<footer class="footer-paginas">
     Realizado por: Camila Macedo | Juliana Nascimento dos Santos
 </footer>
 </body>

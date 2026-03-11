@@ -27,8 +27,8 @@
     
 
 </div>
-<footer>
-    Realizado por: Camila Macedo | Juliana Nascimento dos Santos
+<footer class="footer-paginas">
+    Realizado por: Camila Macedo Mendes | Juliana Nascimento dos Santos
 </footer>
 </body>
 </html>

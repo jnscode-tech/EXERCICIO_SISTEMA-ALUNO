@@ -8,11 +8,10 @@ $arquivo = "alunos.txt";
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
-    $nome = $_POST["nome"];
-    $idade = $_POST["idade"];
-    $curso = $_POST["curso"];
-    $nota = $_POST["nota"];
-
+    $nome = trim($_POST['nome']);
+    $idade = trim($_POST['idade']);
+    $curso = trim($_POST['curso']);
+    $nota = trim($_POST['nota']);
 
     // Array com os dados do aluno
     $alunos = array($nome, $idade, $curso, $nota);
@@ -99,9 +98,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 </main>
 
 
-
 <footer class="footer-paginas">
-    Realizado por: Camila Macedo | Juliana Nascimento dos Santos
+Realizado por: Camila Macedo Mendes | Juliana Nascimento dos Santos
 </footer>
 
 </body>

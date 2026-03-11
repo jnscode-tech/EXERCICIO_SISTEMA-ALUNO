@@ -1,0 +1,9 @@
+Camila Mendes|30|Back-End|9
+Juliana Santos|41|Back-End|8
+Alexandre Cebolinha|25|Back-End|9
+Danilo Outback|32|Back-End|7
+Matheus Guida|25|Back-End|9
+Douglas Castro|36|Back-End|9
+Francielly Melo|19|Back-End|7
+Dimitri Itioka|16|Back-End|10
+Juquinha|40|Back-End|6
